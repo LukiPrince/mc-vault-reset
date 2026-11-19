@@ -55,7 +55,7 @@ To update, remove the old file and add the new one. The configuration and runnin
 
 The two builds are not interchangeable. 26.3 changed the advancement format, and the 26.2 build makes a 26.3 server fail to start. The 26.3 build is not meant for 26.2.
 
-What has been tested: all eight files (ZIP, Fabric, NeoForge and Quilt for both Minecraft versions) on their own test servers, covering registration, the per-player expiry and a clean server log. Earlier builds of the datapack were also played in the game on 26.3 and 26.2: key in vault, chat messages and menu all worked.
+What has been tested: all eight files (ZIP, Fabric, NeoForge and Quilt for both Minecraft versions) on their own test servers, covering registration, the per-player expiry and a clean server log. Earlier builds of the datapack were also played in the game on 26.3 and 26.2: key in vault, chat messages and menu all worked, including two players sharing the same vaults on a real server.
 
 ## Limitations
 
@@ -65,7 +65,7 @@ What has been tested: all eight files (ZIP, Fabric, NeoForge and Quilt for both 
 - Vaults in modded dimensions are not tracked. Only the Overworld, Nether and End are recognised, because vanilla offers no way to read the current dimension as a string. A vault in an unknown dimension is ignored on purpose, rather than risking writes to the wrong world.
 - There is no live countdown at the block. Players hear the duration when they open the vault and get a message when it is free again, nothing in between. A display above the vault would need one text display entity per cooldown, which this pack avoids.
 - If a player is offline when their cooldown ends, they miss the chat message. The vault is still released.
-- Not tested yet: two real players at the same time (the separation is checked on the data level only), and long-term behaviour with many cooldowns running at once.
+- Not tested yet: long-term behaviour with many cooldowns running at once.
 
 ## Links
 

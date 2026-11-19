@@ -209,10 +209,13 @@ registration and chat message work, as does the menu.
 | Dialog opens, presets and slider set the value | clicked and dragged in game |
 | Chat messages reach the right player | delivered via the real UUID |
 
+### Two players at the same time
+
+Played on a real server with two accounts: each player gets their own cooldown on the same vault,
+and one player emptying a vault does not lock it for the other.
+
 ### Open
 
-- **Two simultaneous players.** The separation is verified at data level (two UUIDs, separate
-  expiry values) but has never been played with two real accounts.
 - **Modded dimensions**: deliberately not tracked, see Limits.
 - **Long-term behaviour**, for example many cooldowns running at the same time.
 
