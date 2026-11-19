@@ -10,6 +10,10 @@ First public release for Minecraft 26.3 (datapack format 121).
 - All in-game texts (chat messages, menu dialog) are now in English.
 - New version scheme `x.y.z+<minecraft version>`, also used in the file names.
 - The Quilt manifest now has an upper bound for Minecraft (`<26.4`), like Fabric and NeoForge.
+- The Fabric and Quilt JARs now declare Fabric API as a dependency. Without it, both loaders
+  ignored the JAR silently; now they stop with a message that names the missing mod.
+- The NeoForge manifest no longer sets `modLoader = "lowcodefml"`, which NeoForge reports as
+  deprecated. The JAR loads the same way without it.
 - Repository, comments and documentation translated to English; MIT license added.
 - `test_build.py` checks pack format, predicate format and version ranges against the Minecraft
   version configured in `build.py`.
