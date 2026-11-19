@@ -1,0 +1,1 @@
+Reopen trial chamber vaults after a cooldown, tracked separately for each player and vault. No Java code.
