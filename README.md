@@ -254,3 +254,6 @@ run.
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+The images in `modrinth/` (icon and banners) are built from Minecraft textures and the
+Minecraft font, which belong to Mojang. They are not covered by the MIT license.
