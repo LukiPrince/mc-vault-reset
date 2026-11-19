@@ -1,0 +1,22 @@
+# No modLoader/loaderVersion on purpose: NeoForge then treats this JAR as a mod
+# without code and mounts its data/ directory. The older modLoader = "lowcodefml"
+# still works but logs a deprecation warning (NeoForge 26.2.0.95 and 26.3.0.113).
+license = "MIT"
+issueTrackerURL = "https://github.com/LukiPrince/mc-vault-reset/issues"
+
+[[mods]]
+modId = "vaultreset"
+version = "1.1.0+26.2"
+displayName = "Vault Reset"
+authors = "LukiPrince"
+description = '''
+Lets players reopen vaults after a configurable cooldown, tracked per player and vault.
+Pure datapack, no Java code.
+'''
+
+[[dependencies.vaultreset]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2,26.3)"
+ordering = "NONE"
+side = "BOTH"

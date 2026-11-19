@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "io.github.lukiprince",
+    "id": "vaultreset",
+    "version": "1.1.0+26.2",
+    "metadata": {
+      "name": "Vault Reset",
+      "description": "Lets players reopen vaults after a configurable cooldown, tracked per player and vault. Pure datapack, no Java code.",
+      "license": "MIT",
+      "contributors": {
+        "LukiPrince": "Author"
+      }
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "depends": [
+      {
+        "id": "minecraft",
+        "versions": {
+          "all": [
+            ">=26.2-",
+            "<26.3-"
+          ]
+        }
+      },
+      {
+        "id": "fabric-api"
+      }
+    ]
+  }
+}
