@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "src"
 LOADERS = ROOT / "loaders"
 VERSION = "1.1.0"
-MC = "26.2"  # Minecraft version this branch targets
+MC = "26.3"  # Minecraft version this branch targets
 FULL_VERSION = f"{VERSION}+{MC}"  # scheme used in file names and manifests
 
 # name -> (loader directory under loaders/ or None, extension)

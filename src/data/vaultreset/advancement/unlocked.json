@@ -3,43 +3,49 @@
     "normal": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault"
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:vault"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key"
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key"
-            }
-          }
-        ]
+          ]
+        }
       }
     },
     "ominous": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault"
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:vault"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:ominous_trial_key"
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:ominous_trial_key"
-            }
-          }
-        ]
+          ]
+        }
       }
     }
   },

@@ -4,8 +4,7 @@ Lets players reopen trial chamber vaults after a cooldown. The configured value 
 **server-wide**, but the cooldown itself runs **separately per player and vault**: the fact that
 player A emptied a vault does not lock it for player B.
 
-Pure datapack, no Java code. This branch (`mc/26.2`) targets **Minecraft 26.2** (datapack format 107.1). It is the maintenance
-branch for 26.2; `main` carries the newest Minecraft version (currently 26.3).
+Pure datapack, no Java code. This branch (`main`) targets **Minecraft 26.3** (datapack format 121).
 
 The predecessor `ReOpenable Vaults DP` (last release for 1.21.9 to 1.21.11) no longer loads on
 current datapack formats, and its `CC-BY-NC-ND` license rules out a fork, so this is a fresh
@@ -31,10 +30,10 @@ for what is verified and what is not.
 
 | Target | File | Location |
 |---|---|---|
-| Vanilla / Paper | `vault-reset-1.1.0+26.2-datapack.zip` | `<world>/datapacks/` |
-| Fabric | `vault-reset-1.1.0+26.2-fabric.jar` | `mods/`, together with [Fabric API](https://modrinth.com/mod/fabric-api) |
-| NeoForge | `vault-reset-1.1.0+26.2-neoforge.jar` | `mods/` |
-| Quilt | `vault-reset-1.1.0+26.2-quilt.jar` | `mods/`, together with [Fabric API](https://modrinth.com/mod/fabric-api) |
+| Vanilla / Paper | `vault-reset-1.1.0+26.3-datapack.zip` | `<world>/datapacks/` |
+| Fabric | `vault-reset-1.1.0+26.3-fabric.jar` | `mods/`, together with [Fabric API](https://modrinth.com/mod/fabric-api) |
+| NeoForge | `vault-reset-1.1.0+26.3-neoforge.jar` | `mods/` |
+| Quilt | `vault-reset-1.1.0+26.3-quilt.jar` | `mods/`, together with [Fabric API](https://modrinth.com/mod/fabric-api) |
 
 Updating: remove the old ZIP from `datapacks/` and drop the new one in. The server then reports a
 missing data pack for the old file and loads the new one on its own. Configuration and running
@@ -115,7 +114,6 @@ No marker entities in continuous operation, no entity budget, nothing a `/kill @
 
 ## Changes for 26.3
 
-History: this branch keeps the pre-26.3 format described here; the 26.3 changes live on `main`.
 Only the advancement `vaultreset:unlocked` was affected. Two changes in 26.3
 ([Java Edition 26.3](https://minecraft.wiki/w/Java_Edition_26.3), sections "Predicate" and
 "Advancement definition > Triggers"):

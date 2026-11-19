@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": "Vault Reset - reopen vaults after a cooldown",
-    "min_format": [107, 0],
-    "max_format": [107, 1]
+    "min_format": [121, 0],
+    "max_format": 121
   }
 }
